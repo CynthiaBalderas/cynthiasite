@@ -54,19 +54,30 @@
     <h1>Animal Crossing: New Horizons</h1>
   </header>
   
- <style>
-  .center-audio {
-    text-align: center;
-  }
-</style>
+ <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Audio Example</title>
+</head>
+<body>
 
-<div class="center-audio">
-  <audio controls>
-    <source src="Animal Crossing Theme" type="audio/ogg">
-    <source src="Animal Crossing Theme.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-</div>
+  <div style="text-align: center;">
+    <audio id="myAudio" controls>
+      <source src="Animal Crossing Theme.ogg" type="audio/ogg">
+      <source src="Animal Crossing Theme.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <script>
+    window.onload = function() {
+      var audio = document.getElementById("myAudio");
+      audio.volume = 0.5; // Sets volume to 50%
+    };
+  </script>
+
+</body>
+</html>
 
   <main>
     <section>
